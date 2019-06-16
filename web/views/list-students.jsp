@@ -1,6 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-		 pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 
@@ -41,16 +38,16 @@
 				<c:forEach var="tempStudent" items="${STUDENT_LIST}">
 
 					<!-- set up a link for each student -->
-					<c:url var="tempLink" value="/student">
-						<c:param name="command" value="LOAD" />
-						<c:param name="studentId" value="${tempStudent.id}" />
-					</c:url>
+<%--					<c:url var="tempLink" value="/student">--%>
+<%--						<c:param name="command" value="LOAD" />--%>
+<%--						<c:param name="studentId" value="${tempStudent.id}" />--%>
+<%--					</c:url>--%>
 
-					<!--  set up a link to delete a student -->
-					<c:url var="deleteLink" value="/student">
-						<c:param name="command" value="DELETE" />
-						<c:param name="studentId" value="${tempStudent.id}" />
-					</c:url>
+<%--					<!--  set up a link to delete a student -->--%>
+<%--					<c:url var="deleteLink" value="/student">--%>
+<%--						<c:param name="command" value="DELETE" />--%>
+<%--						<c:param name="studentId" value="${tempStudent.id}" />--%>
+<%--					</c:url>--%>
 
 					<tr>
 						<td> ${tempStudent.id} </td>

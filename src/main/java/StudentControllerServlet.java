@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.sql.DataSource;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -168,6 +169,8 @@ public class StudentControllerServlet extends HttpServlet {
 		
 		// add students to the request
 		request.setAttribute("STUDENT_LIST", students);
+		HttpSession session= (HttpSession) request.getSession();
+				session.setAttribute("AllStudents",students);
 				
 		// send to JSP page (view)
 	RequestDispatcher dispatcher = request.getRequestDispatcher("views/list-students.jsp");
