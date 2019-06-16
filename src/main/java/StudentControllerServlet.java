@@ -24,8 +24,7 @@ public class StudentControllerServlet extends HttpServlet {
 	private StudentDbUtil studentDbUtil=new StudentDbUtil();
 	private List<User>users=new ArrayList<>();
 	
-	@Resource(name="jdbc/web_student_tracker")
-	private DataSource dataSource;
+
 	
 	@Override
 	public void init() throws ServletException {

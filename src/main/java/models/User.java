@@ -8,12 +8,14 @@ public class User {
     private String password;
     private Type type;
 
+
+
     public User(String username, String password) {
         this.username = username;
         this.password = password;
     }
 
-    public User(String id, String username, String password, Type type) {
+    public User(String id, String username, String password,Type type) {
         this.id = id;
         this.username = username;
         this.password = password;
